@@ -269,7 +269,7 @@ public class menu extends javax.swing.JFrame {
 
         jLabel7.setText("Planeta Principal");
 
-        cb_planeta.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        cb_planeta.setModel(cb_planeta.getModel());
         cb_planeta.addItemListener(new java.awt.event.ItemListener() {
             public void itemStateChanged(java.awt.event.ItemEvent evt) {
                 cb_planetaItemStateChanged(evt);
