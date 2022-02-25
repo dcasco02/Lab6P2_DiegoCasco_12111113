@@ -16,6 +16,8 @@ public class Lab6P2_DiegoCasco_12111113 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        menu m= new menu();
+        m.setVisible(true);
     }
     
 }
