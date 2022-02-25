@@ -11,6 +11,7 @@ package lab6p2_diegocasco_12111113;
  */
 public class Razas {
     private String nombre;
+    private String planeta;
 
     public String getNombre() {
         return nombre;
@@ -19,5 +20,19 @@ public class Razas {
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
+
+    public Razas() {
+    }
+
+    public Razas(String nombre, String planeta) {
+        this.nombre = nombre;
+        this.planeta = planeta;
+    }
+
+    @Override
+    public String toString() {
+        return nombre;
+    }
+    
     
 }
