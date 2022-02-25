@@ -5,6 +5,8 @@
  */
 package lab6p2_diegocasco_12111113;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author dcasc
@@ -14,6 +16,7 @@ public class Planeta {
     private int temperatura;
     private int tamano;
     private String agua;
+    private ArrayList <Razas> razas = new ArrayList();
 
     public Planeta() {
     }
@@ -23,6 +26,14 @@ public class Planeta {
         this.temperatura = temperatura;
         this.tamano = tamano;
         this.agua = agua;
+    }
+
+    public ArrayList<Razas> getRazas() {
+        return razas;
+    }
+
+    public void setRazas(ArrayList<Razas> razas) {
+        this.razas = razas;
     }
 
     public String getNombre() {
@@ -59,7 +70,7 @@ public class Planeta {
 
     @Override
     public String toString() {
-        return "Planeta{" + "nombre=" + nombre + '}';
+        return  nombre;
     }
     
 }
