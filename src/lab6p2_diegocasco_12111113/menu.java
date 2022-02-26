@@ -106,11 +106,7 @@ public class menu extends javax.swing.JFrame {
 
         jCheckBox1.setText("jCheckBox1");
 
-        jl_planetas.setModel(new javax.swing.AbstractListModel<String>() {
-            String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
-            public int getSize() { return strings.length; }
-            public String getElementAt(int i) { return strings[i]; }
-        });
+        jl_planetas.setModel(cb_planeta.getModel());
         jScrollPane1.setViewportView(jl_planetas);
 
         jl_explorados.setModel(new javax.swing.AbstractListModel<String>() {
@@ -444,6 +440,7 @@ public class menu extends javax.swing.JFrame {
     private void cb_planetaItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_cb_planetaItemStateChanged
         // TODO add your handling code here:
         DefaultComboBoxModel modelo= (DefaultComboBoxModel)cb_planeta.getModel();
+        
     }//GEN-LAST:event_cb_planetaItemStateChanged
 
     /**
